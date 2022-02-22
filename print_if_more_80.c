@@ -9,9 +9,11 @@ int main()
     int len;
     char line[MAXLINE];
 
-    while((len = getthisline(line, MAXLINE)) > 0)
+    while((len = getthisline(line, MAXLINE)) > 0) {
         if ((len-1) > MORENLINES)
-            printf("%s", line);
+            printf("%s\n", line);
+        printf("%d\n", len);
+    }
 }
 
 // get this line func
